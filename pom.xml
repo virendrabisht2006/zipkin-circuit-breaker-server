@@ -50,7 +50,7 @@
             <artifactId>zipkin-server</artifactId>
             <version>${version.zipkin.server}</version>
         </dependency>
-        <!--   <dependency>
+           <dependency>
                <groupId>org.springframework.cloud</groupId>
                <artifactId>spring-cloud-starter-zipkin</artifactId>
                <version>${version.zipkin.starter}</version>
@@ -60,8 +60,9 @@
                <groupId>org.springframework.cloud</groupId>
                <artifactId>spring-cloud-starter-sleuth</artifactId>
                <version>${version.zipkin.starter}</version>
-           </dependency> -->
+           </dependency>
     </dependencies> -->
+    <dependencies>
     <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -95,8 +96,6 @@
             <artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
             <version>${zipkin.version}</version>
         </dependency>
-
-
     </dependencies>
 
     <dependencyManagement>
