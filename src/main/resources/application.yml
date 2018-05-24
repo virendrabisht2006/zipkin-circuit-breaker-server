@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zipin-server
+
+server:
+  port: 8600
+
+
+metrics:
+  enabled: true
