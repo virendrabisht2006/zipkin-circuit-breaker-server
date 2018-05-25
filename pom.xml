@@ -24,7 +24,7 @@
         <zipkin.version>2.4.5</zipkin.version>
     </properties>
 
-   <!-- <dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -38,31 +38,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-autoconfigure-ui</artifactId>
-            <version>${version.zipkin.server}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-server</artifactId>
-            <version>${version.zipkin.server}</version>
-        </dependency>
-           <dependency>
-               <groupId>org.springframework.cloud</groupId>
-               <artifactId>spring-cloud-starter-zipkin</artifactId>
-               <version>${version.zipkin.starter}</version>
-           </dependency>
-
-           <dependency>
-               <groupId>org.springframework.cloud</groupId>
-               <artifactId>spring-cloud-starter-sleuth</artifactId>
-               <version>${version.zipkin.starter}</version>
-           </dependency>
-    </dependencies> -->
-    <dependencies>
     <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -91,11 +66,11 @@
             <version>${zipkin.version}</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
             <version>${zipkin.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <dependencyManagement>
@@ -109,5 +84,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>

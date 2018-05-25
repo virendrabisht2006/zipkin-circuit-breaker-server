@@ -3,7 +3,7 @@ spring:
     name: zipin-server
 
 server:
-  port: 8600
+  port: 8700
 
 logging:
   level.zipkin: INFO
